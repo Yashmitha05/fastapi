@@ -16,13 +16,13 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-@app.get("/")
-async def read_root():
-    return FileResponse("index.html")
+#@app.get("/")
+#async def read_root():
+    #return FileResponse("index.html")
 
-@app.get("/result.html")
-async def get_result_page():
-    return FileResponse("result.html")
+#@app.get("/result.html")
+#async def get_result_page():
+    #return FileResponse("result.html")
 
 def get_mock_analysis():
     return {
